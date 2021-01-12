@@ -7,7 +7,7 @@ let inputRow = document.getElementById("input-row");
 let inputCol = document.getElementById("input-col");
 let inputButton2 = document.getElementById("button-create-table");
 let outputTable = document.getElementById("table");
-let outputBr = document.getElementsByTagName("br");
+let output = document.getElementsByClassName("level-item");
 
 function modifyId(){
     let myId = Number(620610786);
@@ -16,7 +16,7 @@ function modifyId(){
 function createTable(){
     modifyId();
     let myName = "Nattapon Tancho" + String(myId + Number(inputNum.value));
-    outputBr.innerHTML = myName;
+    output.innerHTML += myName;
 
 }
 inputButton1.addEventListener('click',modifyId);
